@@ -89,7 +89,9 @@
 			rgba(0, 0, 0, 0.2) 5px
 	);
 }
-
+meter {
+	width: 50px;
+}
 .bookshelf {
 	width: 100%;
 	margin-top: 32px;
