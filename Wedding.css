@@ -1,0 +1,31 @@
+a {
+	font-family: "Serif"
+}
+h1, h2, h3, h4 {
+	text-align: center;
+	font-family: 'Monsieur La Doulaise', serif;
+	font-size: 3.0em
+}
+p  {
+	font-family: 'Parisienne', serif;
+	font-size: 2.0em
+}
+li {
+	font-family: 'Parisienne', serif;
+}
+body {
+	margin: auto;
+	max-width: 600px;
+}
+textarea {
+	max-width: 100%
+}
+img {
+	max-width: 100%
+}
+progress {
+	width: 100%
+}
+.centered {
+	text-align: center;
+}
