@@ -7,11 +7,18 @@ h1, h2, h3, h4 {
 	font-size: 3.0em
 }
 p  {
-	font-family: 'Parisienne', serif;
-	font-size: 2.0em
+/* 	font-family: 'Parisienne', serif; */
+/* 	font-size: 2.0em */
 }
 li {
-	font-family: 'Parisienne', serif;
+/* 	font-family: 'Parisienne', serif; */
+}
+table {
+	width: 100%;
+	text-align: center;
+}
+.menu-item {
+	display: inline;
 }
 body {
 	margin: auto;
@@ -28,4 +35,7 @@ progress {
 }
 .centered {
 	text-align: center;
+	font-family: 'Parisienne', serif;
+	font-size: 2.0em;
+
 }
