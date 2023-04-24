@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paycheck</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function calculate() {
+            let tEarned = document.getElementById("eTotal").value;
+            document.getElementById("tParish").innerHTML = (tEarned * .05).toFixed(2)
+            document.getElementById("tCharity").innerHTML = (tEarned * .01).toFixed(2)
+            document.getElementById("tDiocese").innerHTML = (tEarned * .04).toFixed(2)
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>TOTAL EARNINGS</th>
+        <td><input type="number" id="eTotal" name="" step="0.01"></td>
+    </tr>
+    <tr>
+        <th>TOTAL TAXES</th>
+        <td><input type="number" id="dTax" name="" step="0.01"></td>
+        <th>TOTAL DEDUCTIONS</th>
+        <td><input type="number" id="dDed" name="" step="0.01"></td>
+    </tr>
+    <tr>
+        <th>5% TO PARISH</th>
+        <td id="tParish"></td>
+        <th>4% TO CHARITY</th>
+        <td id="tCharity"></td>
+        <th>1% TO DIOCESE</th>
+        <td id="tDiocese"></td>
+    </tr>
+</table>
+<button type="button" onclick="calculate()">CALCULATE</button>
+</body>
+</html>
