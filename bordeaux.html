@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BORDEAUX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+      $(document).ready(function() {
+          // run after document loads
+      })
+      var request = new XMLHttpRequest();
+      request.open('GET', 'http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today ', true);
+      var celebrationsTable = document.getElementById("celebrations-table"); // running before loaded
+      request.onload = function() {
+        var data = JSON.parse(this.response);
+        console.log(data);
+        for (var x = 0; x < data.celebrations.length; x++) {
+            var newRow = celebrationsTable.insertRow(0);
+
+            var newCellColor = newRow.insertCell(0);
+            var newCellTitle = newRow.insertCell(1);
+            var newCellRank = newRow.insertCell(2);
+
+            newCellColor.innerHTML = data.celebrations[x].colour;
+            newCellTitle.innerHTML = "";
+            newCellRank.innerHTML = "";
+            // var newText = document.createTextNode('new row')
+            // newCell.appendChild(newText)
+
+        }
+    }
+    request.send()
+  </script>
+</head>
+<body>
+<h1>TODAY</h1>
+<h2 id="title">Monday, 12th week in Ordinary Time</h2>
+<table id="celebrations-table">
+    <tr>
+        <th>COLOR</th>
+        <th>TITLE</th>
+        <th>RANK</th>
+    </tr>
+</table>
+</body>
+</html>
