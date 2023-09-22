@@ -1,0 +1,48 @@
+{
+  "games": [
+    {
+      "gameDate": "2023‐09‐22T09:49:35Z",
+      "venue": "SIUH Community Park",
+      "status": "Final",
+      "address": "Richmond Terrace New York",
+      "homeTeamID": 586,
+      "awayTeamID": 117,
+      "homeTeamCode": "SI",
+      "awayTeamCode": "HOU",
+      "boxscore": {
+        "away": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          5,
+          2,
+          1
+        ],
+        "home": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "season": 2023,
+  "league": "The Atlantic League"
+}
