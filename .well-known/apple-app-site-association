@@ -4,7 +4,7 @@
         "details": [
             {
                 "appIDs": [
-                    "6476935090.com.alexanderrohrig.Carteret"
+                    "3865YC2YEY.com.alexanderrohrig.Carteret"
                 ],
                 "paths": [
                     "*"
@@ -17,7 +17,7 @@
     },
     "webcredentials": {
         "apps": [
-            "6476935090.com.alexanderrohrig.Carteret"
+            "3865YC2YEY.com.alexanderrohrig.Carteret"
         ]
     }
 }
